@@ -474,3 +474,142 @@ details[open]>summary:before {
     transform: rotate(45deg) scale(0.9);
   }
 }
+
+.img-fluid {
+  height: 5%;
+}
+
+.header {
+  transform: translateY(-10px);
+}
+
+.carousel-item>img {
+  min-height: 200px !important;
+}
+
+/* Custom styling for controls position */
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  background: none;
+  /* Remove default background */
+  border: none;
+  /* Remove default border */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  border-radius: 50%;
+  transform: scale(2) !important;
+}
+
+/* Adjust the positioning of next icon */
+.carousel-control-next-icon {
+  right: 0;
+  left: auto;
+  /* Set left to auto to avoid pushing the page */
+}
+
+/* Custom styling for indicators */
+.carousel-indicators {
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-indicators button {
+  background-color: darkred !important;
+  width: 15px !important;
+  height: 15px !important;
+  margin: 0 5px;
+  border: none;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
+body {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  /* padding-top: 100px; */
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.top {
+  height: 60px !important;
+}
+
+.carousel-control-next-icon {
+  right: 0;
+  left: auto;
+  /* Adjust the positioning */
+  transform: scale(1.5);
+  /* Adjust the scale as needed */
+}
+
+.carousel-control {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 425px) {
+  .content-speech {
+    font-size: 16px;
+  }
+
+  .carousel-indicators button {
+    transform: scale(0.8);
+  }
+}
+
+.container-chart {
+  display: grid;
+  margin: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.chart {
+  border: 1px solid rgb(145, 145, 145);
+  border-radius: 20px;
+  max-width: 300px !important;
+  margin-bottom: 20px;
+  display: inline-block !important;
+  margin: 20px auto !important;
+}
+
+.chart p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container::before {
+  display: none;
+}
+
+.header a {
+  color: #fff !important;
+  font-weight: 500;
+  transition: all 0.1s ease;
+}
+
+.header a:hover {
+  font-weight: 700;
+}
+
+.bold {
+  font-weight: 600;
+}
