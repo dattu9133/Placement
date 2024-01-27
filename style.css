@@ -366,7 +366,7 @@ details[open]>summary:before {
   width: 100%;
   top: 0;
   left: 0;
-
+  /* padding: 10px; */
 }
 
 .untitled__slide {
